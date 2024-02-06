@@ -6,6 +6,7 @@ public class Search {
     public static void main(String[] args) {
         LinkedHashMap<String,Integer> splitStock =new LinkedHashMap<>();
         ArrayList<String> combinedValues=new ArrayList<>();
+        Scanner userScanner=new Scanner(System.in);
 
         // Scanner scanner =new Scanner(System.in);
         // System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee");
@@ -21,6 +22,7 @@ public class Search {
             System.out.println("Database not UPDATED!!");
         }
         System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee");
+        int userInput=userScanner.nextInt();
         if()
         for(String Line: combinedValues){
             String eachLine=Manipulate(Line);
