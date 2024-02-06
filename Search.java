@@ -2,11 +2,7 @@ import java.io.*;
 import java.util.*;
 public class Search {
 
-    public static String Manipulate(String string){
-        String[] splitBySpace=string.split(" ");
-        String shopItem=splitBySpace[0];
-        return "hi";
-    } 
+   
     public static void main(String[] args) {
         LinkedHashMap<String,Integer> splitStock =new LinkedHashMap<>();
         ArrayList<String> combinedValues=new ArrayList<>();
