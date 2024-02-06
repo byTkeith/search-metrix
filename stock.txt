@@ -1,0 +1,6 @@
+beans 80 
+rice 30 
+coke 20 
+pens 8 
+shoes 100 
+locks 60 
