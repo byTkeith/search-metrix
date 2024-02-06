@@ -21,12 +21,23 @@ public class Search {
         }catch(FileNotFoundException e){
             System.out.println("Database not UPDATED!!");
         }
+        for(String Line: combinedValues){
+            String[] splitBySpace=Line.split(" ");
+            String shopItem=splitBySpace[0];
+            int itemStock=Integer.parseInt(splitBySpace[1]);
+            splitStock.put(shopItem, itemStock);
+        }
         System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee");
         int userInput=userScanner.nextInt();
-        if()
-        for(String Line: combinedValues){
-            String eachLine=Manipulate(Line);
+        if(userInput==1){
+            System.out.println("++Kindly enter the item you are looking for++");
+            String itemSearched=userScanner.nextLine();
+            if(combinedValues.get(itemSearched)>0){
+
+            }
+
         }
+        
     }
     
 }
