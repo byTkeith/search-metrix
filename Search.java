@@ -34,7 +34,7 @@ public class Search {
             String[] splitBySpace=eID.split(" ");
             String stuffID=splitBySpace[0];
             String stuffName=splitBySpace[1];
-            e
+            splitEmployeeDetails.put(stuffID, stuffName);
         }
         for(String Line: combinedValues){
             String[] splitBySpace=Line.split(" ");
