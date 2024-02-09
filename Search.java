@@ -44,10 +44,11 @@ public class Search {
         }
         int stockNeeded=0;
         
-         
-        System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee\n Done");
+        
+        System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee\n3. Done");
         int userInput=userScanner.nextInt();
         while(userInput!=3){
+        
             if(userInput==1){
                 System.out.println("++Kindly enter the item you are looking for++");
                 String itemSearched=userScanner.next();
@@ -75,7 +76,7 @@ public class Search {
                     
                 }
             }
-        }
+        }System.out.println("Good Bye;)");
     }
     
 }
