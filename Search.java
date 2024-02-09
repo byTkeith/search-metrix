@@ -63,6 +63,7 @@ public class Search {
         }
         else if(userInput==2){
             System.out.println("++Enter your employee number++");
+            String stuffCredentials=userScanner.nextLine();
         }
         
     }
