@@ -43,9 +43,11 @@ public class Search {
             splitStock.put(shopItem, itemStock);
         }
         int stockNeeded=0;
+        
          
         System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee");
         int userInput=userScanner.nextInt();
+        while()
         if(userInput==1){
             System.out.println("++Kindly enter the item you are looking for++");
             String itemSearched=userScanner.next();
@@ -67,6 +69,10 @@ public class Search {
             if(splitEmployeeDetails.containsKey(stuffCredentials)){
                 System.out.println("++Kindly enter the item you are searching for++");
                 String stuffItem=userScanner.nextLine();
+                if(splitStock.containsKey(stuffItem)){
+                    System.out.println("item: "+stuffItem+" Quantity: "+splitStock.get(stuffItem));
+                }else{System.out.println("This item was never in stock");}
+                
             }
         }
         
