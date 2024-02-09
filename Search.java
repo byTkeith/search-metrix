@@ -45,37 +45,37 @@ public class Search {
         int stockNeeded=0;
         
          
-        System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee");
+        System.out.println("++Kindly select your category 1 or 2.\n1. Client\n2. Employee\n Done");
         int userInput=userScanner.nextInt();
-        while()
-        if(userInput==1){
-            System.out.println("++Kindly enter the item you are looking for++");
-            String itemSearched=userScanner.next();
-            if(splitStock.get(itemSearched)==0||splitStock.get(itemSearched)==null){
-                System.out.println("unfortunately we are out of stock");
-                stockNeeded++;
-            }
-            else{
-                System.out.println("the are more "+itemSearched+" in stock.");
-                stockNeeded++;
+        while(userInput!=3){
+            if(userInput==1){
+                System.out.println("++Kindly enter the item you are looking for++");
+                String itemSearched=userScanner.next();
+                if(splitStock.get(itemSearched)==0||splitStock.get(itemSearched)==null){
+                    System.out.println("unfortunately we are out of stock");
+                    stockNeeded++;
+                }
+                else{
+                    System.out.println("the are more "+itemSearched+" in stock.");
+                    stockNeeded++;
 
-            }
-            
-
-        }
-        else if(userInput==2){
-            System.out.println("++Enter your employee ID++");
-            String stuffCredentials=userScanner.nextLine();
-            if(splitEmployeeDetails.containsKey(stuffCredentials)){
-                System.out.println("++Kindly enter the item you are searching for++");
-                String stuffItem=userScanner.nextLine();
-                if(splitStock.containsKey(stuffItem)){
-                    System.out.println("item: "+stuffItem+" Quantity: "+splitStock.get(stuffItem));
-                }else{System.out.println("This item was never in stock");}
+                }
                 
+
+            }
+            else if(userInput==2){
+                System.out.println("++Enter your employee ID++");
+                String stuffCredentials=userScanner.nextLine();
+                if(splitEmployeeDetails.containsKey(stuffCredentials)){
+                    System.out.println("++Kindly enter the item you are searching for++");
+                    String stuffItem=userScanner.nextLine();
+                    if(splitStock.containsKey(stuffItem)){
+                        System.out.println("item: "+stuffItem+" Quantity: "+splitStock.get(stuffItem));
+                    }else{System.out.println("This item was never in stock");}
+                    
+                }
             }
         }
-        
     }
     
 }
