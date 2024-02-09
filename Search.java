@@ -62,8 +62,11 @@ public class Search {
 
         }
         else if(userInput==2){
-            System.out.println("++Enter your employee number++");
+            System.out.println("++Enter your employee ID++");
             String stuffCredentials=userScanner.nextLine();
+            if(splitEmployeeDetails.containsKey(stuffCredentials)){
+                System.out.println();
+            }
         }
         
     }
